@@ -1,54 +1,87 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# LinkNest
 
-Currently, two official plugins are available:
+**Your personal, badass React link management app.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+LinkNest is a React project that helps you stash, categorize, and browse links like a pro. Built with React, TypeScript, and a clean folder structure for easy scaling and maintenance.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- Organized link storage by categories
+- Clean UI with React components
+- Context API for state management
+- TypeScript for type safety
+- Metadata extraction
+- Easy addition, deletion, and viewing of links
+- Responsive design (because who uses only desktops anymore?)
+
+---
+
+## Folder Structure
+
+```
+src/
+├── assets/      # Images, icons, static stuff
+├── components/  # Reusable React components
+├── context/     # React Context for global state
+├── pages/       # Different pages/routes
+├── types/       # TypeScript interfaces and types
+├── utils/       # Helper functions and utilities
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Getting Started
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### Prerequisites
+
+- Node.js (v14 or above)
+- npm or yarn
+- Git (for version control)
+
+### Installation
+
+Clone the repo:
+
+```bash
+git clone git@github.com:your-username/link-nest.git
+cd link-nest
 ```
+
+Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+Run the app:
+
+```bash
+npm start
+# or
+yarn start
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser and enjoy.
+
+---
+
+## Contributing
+
+Feel like making LinkNest even better? Fork the repo, create a feature branch, and shoot a PR.
+
+Keep it clean, keep it simple, and keep it LinkNest-y.
+
+---
+
+## License
+
+MIT © [Your Name or Username]
+
+---
+
+*LinkNest — because your links deserve a home that’s cooler than your browser bookmarks.*
