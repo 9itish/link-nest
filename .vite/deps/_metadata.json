@@ -1,0 +1,25 @@
+{
+  "hash": "a1ec500c",
+  "configHash": "deddb08b",
+  "lockfileHash": "7e74709a",
+  "browserHash": "d2e0a0af",
+  "optimized": {
+    "react": {
+      "src": "../../../../../Libraries/NodeModules/React/Link Nest/node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "380d34c7",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../../../../Libraries/NodeModules/React/Link Nest/node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "88246945",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-FUY4VSRC": {
+      "file": "chunk-FUY4VSRC.js"
+    }
+  }
+}

@@ -1,0 +1,97 @@
+body {
+  font-family: sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  padding: 2rem;
+  align-items: start;
+}
+
+#root {
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+}
+
+li a {
+  text-decoration: none;
+  color: #0070f3;
+  word-break: break-all;
+}
+
+li button {
+  background: #e00;
+  padding: 0.3rem 0.6rem;
+  border-radius: 3px;
+  color: white;
+  border: none;
+}
+
+li img {
+  max-width: 100%;
+  aspect-ratio: 8/5;
+  object-fit: cover;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+li a {
+  word-break: keep-all;
+}
+
+.link-it-wrap {
+  margin: 0.5rem;
+  background: white;
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+.link-it-wrap p {
+  margin-bottom: 0;
+}
+
+li button {
+  position: absolute;
+  top: -15px;
+  right: 30px;
+  display: none;
+  opacity: 0;
+  transition: 1s all;
+}
+
+li:hover button {
+  display: block;
+  opacity: 1;
+}
+
+input {
+  background: white;
+  color: gray;
+}
+
+fieldset label {
+  display: block;
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+fieldset legend {
+  margin-left: 1rem;
+  padding: 0 0.5rem;
+}
