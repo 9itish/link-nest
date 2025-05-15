@@ -37,13 +37,23 @@ export function CategoryLinkList({ category, links, onDelete, limit }: Props) {
   let filteredLinks = links
     .filter((link) => link.linkData?.category === category);
 
+  
+
    switch (prefs.sortPref) {
     case "titleAsc":
-      filteredLinks = filteredLinks.sort((a, b) => a.metaData.title.localeCompare(b.metaData.title));
+      filteredLinks = filteredLinks.sort((a, b) => {
+        const titleA = a.metaData?.title?.toLowerCase() || '';
+        const titleB = b.metaData?.title?.toLowerCase() || '';
+        return titleA.localeCompare(titleB);
+      });
       break;
 
     case "titleDsc":
-      filteredLinks = filteredLinks.sort((a, b) => b.metaData.title.localeCompare(a.metaData.title));
+      filteredLinks = filteredLinks.sort((a, b) =>  {
+        const titleA = a.metaData?.title?.toLowerCase() || '';
+        const titleB = b.metaData?.title?.toLowerCase() || '';
+        return titleB.localeCompare(titleA);
+      });
       break;
 
     case "dateAsc":
